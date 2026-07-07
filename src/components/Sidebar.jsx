@@ -1,4 +1,5 @@
 import photo from "../assets/WIN_20250123_10_00_10_Pro.jpg";
+import qrCode from "../assets/qr-code.png";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub } from "react-icons/fa";
 
 function Sidebar() {
@@ -74,6 +75,15 @@ function Sidebar() {
                     </div>
                 </div>
             ))}
+
+            <div className="qr-code">
+                <img
+                    src={qrCode}
+                    alt="QR Code vers mon CV"
+                />
+
+                <p>Scannez pour consulter mon CV en ligne</p>
+            </div>
 
         </aside>
     );
